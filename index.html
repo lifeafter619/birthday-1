@@ -67,7 +67,7 @@
                             return audio.playState == 2;
                         }
                     }
-                    $('#btn-play').on('click', function () {
+                    $('#btn-play').bind('click', function () {
                         if ($(this).hasClass('rotate')) {
                             a.pause();
                             $(this).removeClass('rotate');
